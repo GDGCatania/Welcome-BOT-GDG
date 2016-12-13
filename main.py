@@ -13,7 +13,11 @@ def welcome(bot, update):
     if(update.message.new_chat_member):
         open("logs/logs_" + time.strftime('%d_%m_%Y') + ".txt","w").write("\nupdate status: " + str(update))
     	chat_id = update.message.chat.id
-    	bot.sendMessage(chat_id=chat_id, text=WELCOME_MESSAGE.replace("{{username}}",str(update.message.new_chat_member.username)), parse_mode='HTML')
+        if(update.message.new_chat_member.username != ""):
+            username = "@" + update.message.new_chat_member.username;
+        else:
+            new_user = update.message.new_chat_member.first_name;
+    	bot.sendMessage(chat_id=chat_id, text=WELCOME_MESSAGE.replace("{{username}}",str(new_user)), parse_mode='HTML')
 
 def error(bot, update, error):
     logger.warn('Update "%s" caused error "%s"' % (update, error))
