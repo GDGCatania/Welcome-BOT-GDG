@@ -14,7 +14,7 @@ def welcome(bot, update):
         open("logs/logs_" + time.strftime('%d_%m_%Y') + ".txt","w").write("\nupdate status: " + str(update))
     	chat_id = update.message.chat.id
         if(update.message.new_chat_member.username != ""):
-            username = "@" + update.message.new_chat_member.username;
+            new_user = "@" + update.message.new_chat_member.username;
         else:
             new_user = update.message.new_chat_member.first_name;
     	bot.sendMessage(chat_id=chat_id, text=WELCOME_MESSAGE.replace("{{username}}",str(new_user)), parse_mode='HTML')
