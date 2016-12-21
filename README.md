@@ -1,6 +1,6 @@
-##Welcome-Bot(To GDG)
+##Welcome-BOT(To GDG)
 
-![Welcome-Bot(To GDG)](https://raw.githubusercontent.com/Tkd-Alex/Welcome-To-GDG/master/img/banner.jpg  "Welcome-Bot(To GDG)")
+![Welcome-BOT(To GDG)](https://raw.githubusercontent.com/Tkd-Alex/Welcome-To-GDG/master/img/banner.jpg  "Welcome-BOT(To GDG)")
 
 Welcome To **GDG** it's a simple telegram bot. 
 His job is to say *"Welcome"* to new members of telegram group, and invite them to join the [GDG Catania Forum](http://www.forum.gdgcatania.org/).
