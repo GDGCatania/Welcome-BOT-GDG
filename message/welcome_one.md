@@ -1,0 +1,1 @@
+*Benvenuto/a* {{username}} dai un'occhiata al nostro [forum](http://www.forum.gdgcatania.org/) . 
