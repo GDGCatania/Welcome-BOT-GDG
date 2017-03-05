@@ -18,7 +18,7 @@ def welcome(bot, update):
     if(update.message.new_chat_member):
         open("logs/logs_" + time.strftime('%d_%m_%Y') + ".txt","w").write("\nupdate status: " + str(update))
     	chat_id = update.message.chat.id
-
+        new_user = ""
         message_rnd = random.choice(message_list)
         WELCOME_MESSAGE = open('message/' + message_rnd , 'r').read().replace("\n", "")
 
